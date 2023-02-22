@@ -1,5 +1,5 @@
-# cgpt_scale-weights-and-measures
-React app with OpenAI REST endpoints
+# cgpt_react-scale-weights-and-measures
+React app UI talking to OpenAI REST endpoints
 
 #### Weights and Measures scaling using OpenAI API using a React UI popup component - Demo
 
