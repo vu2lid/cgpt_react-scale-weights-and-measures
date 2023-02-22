@@ -9,7 +9,7 @@ This is a simple/toy REST service in Node.js and Express using OpenAI API for co
 
 You will need Node.js and npm
 
-Get OpenAI API key. Copy `.env.example` to `.env` and add the API key there.
+Get OpenAI API key (check References towards the end). Copy `.env.example` to `.env` and add the API key there.
 
 Do an `npm install` and run with `npm start`. This will start a local REST service on port 4000 and a react web UI on port 3000.
 
@@ -38,4 +38,5 @@ Experiment with training data and question !
 1. [OpenAI quickstart](https://platform.openai.com/docs/quickstart)
 2. [Express Node introduction](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
 3. [Imperial units](https://en.wikipedia.org/wiki/Imperial_units)
+4. [React tutorial](https://reactjs.org/tutorial/tutorial.html)
 
