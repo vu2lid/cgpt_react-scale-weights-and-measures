@@ -1,21 +1,47 @@
 {
   "name": "cgpt_scale-weights-and-measures",
   "version": "0.1.0",
+  "description": "Try to do weights and measures scaling using OpenAI API and some React",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "openai": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
+  "keywords": [
+    "weights",
+    "measures",
+    "REST",
+    "ChatGPT",
+    "OpenAI",
+    "React"
+  ],
+  "author": "vu2lid",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/vu2lid/cgpt_scale-weights-and-measures/issues"
+  },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npx nodemon src/server/server.js --watch src/server",
+    "client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vu2lid/cgpt_scale-weights-and-measures.git"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +60,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
   }
 }
