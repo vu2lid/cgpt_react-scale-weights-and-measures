@@ -15,7 +15,7 @@ Do an `npm install` and run with `npm start`. This will start a local REST servi
 
 The React web UI can be accessed on a browser by going to `http://localhost:3000`. The React UI will talk to the backend REST services and update the UI with results.
 
-It should be possible to test some weights and measures scaling REST endpoint with something like:
+To try the backend REST service without React UI; it should be possible to test some weights and measures scaling REST endpoint with something like:
 
 `http://localhost:4000/scaleWeightsAndMeasures?quantity=20&fromUnit=ounces&toUnit=milliliters&scaleFactor=2`
 
