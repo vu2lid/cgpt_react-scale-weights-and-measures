@@ -45,23 +45,6 @@ const ConversionPopup = () => {
     }
   }, [loading, value, sourceUnit, targetUnit, scaleFactor, result]);
 
-
-  const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-`;
-
-  const Form = styled.form`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
   const Label = styled.label`
   display: block;
   margin-bottom: 10px;
@@ -127,7 +110,7 @@ const ConversionPopup = () => {
         <br />
         <Button type="submit">Convert</Button>
       </form>
-      {loading && <p>Converting...</p> || result && <p>{result}</p> || <p>&nbsp;</p>}
+      {(loading && <p>Converting...</p>) || (result && <p>{result}</p>) || (<p>&nbsp;</p>)}
     </div>
   );
 };
