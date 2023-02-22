@@ -11,9 +11,9 @@ You will need Node.js and npm
 
 Get OpenAI API key (check References towards the end). Copy `.env.example` to `.env` and add the API key there.
 
-Do an `npm install` and run with `npm start`. This will start a local REST service on port 4000 and a react web UI on port 3000.
+Do an `npm install` and run with `npm start`. This will start a local REST service on port 4000 and a React web UI on port 3000.
 
-The React web UI can be accessed on a browser by going to `http://localhost:3000`.
+The React web UI can be accessed on a browser by going to `http://localhost:3000`. The React UI will talk to the backend REST services and update the UI with results.
 
 It should be possible to test some weights and measures scaling REST endpoint with something like:
 
